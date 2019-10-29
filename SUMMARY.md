@@ -38,6 +38,8 @@
 
 ## 엘라스틱서치 <a id="undefined-1"></a>
 
-* [엘라스틱서치 설치하기](undefined-1/undefined-1.md)
-* [노리 형태소 분석기를 써보자](undefined-1/undefined-2.md)
+* [엘라스틱서치 설치하기](undefined-1/setup_elasticsearch.md)
+* [노리 형태소 분석기를 써보자](undefined-1/nori.md)
+* [엘라스틱서치를 통해 검색을 사용해보자.](undefined-1/elasticquery.md)
+* [Untitled](undefined-1/untitled.md)
 
