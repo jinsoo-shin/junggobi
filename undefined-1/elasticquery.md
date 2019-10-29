@@ -110,7 +110,77 @@ def search(request):
 
 
 
+## 합본.
 
+```text
+@api_view(['GET', 'POST'])
+def search(request):
+    if request.method == 'GET':
+        search_word = request.query_params.get('search_word')
+        if search_word:
+            es = Elasticsearch()
+            docs = es.search(index='productinfo-index',
+                 body={
+                     "size": 2,
+                     "from":0,
+                     "query": {
+                         "multi_match": {
+                             "query": search_word,
+                             "fields": ["title", "contents", "region"]
+                         }
+                     },
+                     "highlight": {
+                         "pre_tags": ["<string>"],
+                         "post_tags": ["</string>"],
+                         "fields": {
+                             "title": {},
+                             "contents":{}
+                         },
+                     },
+                     "aggs": {#aggregations
+                         "avg_price": {
+                             "avg": {
+                                 "field": "price"
+                             }
+                         },
+                         "max_price": {
+                             "max": {
+                                 "field": "price"
+                             }
+                         },
+                         "min_price": {
+                             "min": {
+                                 "field": "price"
+                             }
+                         },
+                         "group_by_date": {
+                             "terms": {
+                                 "field": "date",
+                                 "format": "yyyy-MM-dd"
+                             },
+                             "aggs": {
+                                 "date_avg": {
+                                     "avg": {
+                                         "field": "price"
+                                     },
+                                 },
+                                 "date_max": {
+                                     "max": {
+                                         "field": "price"
+                                     }
+                                 },
+                                 "date_min": {
+                                     "min": {
+                                         "field": "price"
+                                     }
+                                 }
+                             }
+                         },
+                     }
+                 })
+
+            return Response(docs)
+```
 
 
 
