@@ -165,7 +165,7 @@ DATABASES = {
 python manage.py migrate
 ```
 
-![&#xC96C;&#xB974;&#xB974;&#xB974;&#xB974;&#xB975;](../.gitbook/assets/image%20%2830%29.png)
+![&#xC96C;&#xB974;&#xB974;&#xB974;&#xB974;&#xB975;](../.gitbook/assets/image%20%2831%29.png)
 
 ![&#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; mysql&#xACFC; &#xC5F0;&#xB3D9;&#xB418;&#xC5C8;&#xB2E4;!](../.gitbook/assets/image%20%2817%29.png)
 

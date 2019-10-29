@@ -30,11 +30,11 @@ you cannot perform api calls on the default index
 
 > bin폴더의 elasticsearch.bat을 실행시킨다
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
 > !?!? 내가 예상했던 그림은 started가 뜨는 것인데 \Common은 예상되지 않았습니다. 에러메시지가 떴다.
 
-![&#xB0B4;&#xAC00; &#xC608;&#xC0C1;&#xD588;&#xB358; &#xADF8;&#xB9BC;....](../.gitbook/assets/image%20%2841%29.png)
+![&#xB0B4;&#xAC00; &#xC608;&#xC0C1;&#xD588;&#xB358; &#xADF8;&#xB9BC;....](../.gitbook/assets/image%20%2842%29.png)
 
 > 찾아보니 JAVA path를 인식못해서 그렇다고한다.....
 >
@@ -48,7 +48,7 @@ SET "JAVA_HOME=C:\Program Files\Java\jdk1.8.0_191"
 
 > 뭐가 많이 뜨긴했지만 그래도 맨마지막에 started가 떴다!!
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](../.gitbook/assets/image%20%2844%29.png)
 
 > 제대로 동작하는지 postman으로 테스트해보았다.
 
@@ -60,7 +60,7 @@ SET "JAVA_HOME=C:\Program Files\Java\jdk1.8.0_191"
 
 ## 2. nori 설치하기.
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
 > 저 파일을 실행시켜서 노리를 설치해보겠다.
 
@@ -89,7 +89,7 @@ SET "JAVA_HOME=C:\Program Files\Java\jdk1.8.0_191"
 
 ![&#xC124;&#xCE58;&#xB41C; &#xBC84;&#xC804;](../.gitbook/assets/image%20%2813%29.png)
 
-![&#xBC11;&#xC758; &#xBC84;&#xC804;&#xC740; &#xC2E4;&#xD328;&#xD588;&#xB2E4; 7.X&#xB97C; &#xC124;&#xCE58;&#xD558;&#xC2DC;&#xC624;.](../.gitbook/assets/image%20%2840%29.png)
+![&#xBC11;&#xC758; &#xBC84;&#xC804;&#xC740; &#xC2E4;&#xD328;&#xD588;&#xB2E4; 7.X&#xB97C; &#xC124;&#xCE58;&#xD558;&#xC2DC;&#xC624;.](../.gitbook/assets/image%20%2841%29.png)
 
 {% code-tabs %}
 {% code-tabs-item title="설치" %}
@@ -268,5 +268,5 @@ bulk_indexing()
 
 > 제대로 들어갔는지 확인을 위해 작성한 search 함수를 실행한다
 
-![&#xD06C;&#xC73C;.... display 11&#xC778; &#xACB0;&#xACFC;&#xBB3C;&#xC774; &#xC798; &#xCD9C;&#xB825;&#xB418;&#xC5C8;&#xB2E4;.](../.gitbook/assets/image%20%2829%29.png)
+![&#xD06C;&#xC73C;.... display 11&#xC778; &#xACB0;&#xACFC;&#xBB3C;&#xC774; &#xC798; &#xCD9C;&#xB825;&#xB418;&#xC5C8;&#xB2E4;.](../.gitbook/assets/image%20%2830%29.png)
 

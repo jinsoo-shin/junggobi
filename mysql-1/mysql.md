@@ -6,13 +6,13 @@
 
 ![add account &#xD074;&#xB9AD;](../.gitbook/assets/image%20%2810%29.png)
 
-![&#xC774;&#xB984;, &#xBE44;&#xBC88; &#xC9C0;&#xC815;](../.gitbook/assets/image%20%2833%29.png)
+![&#xC774;&#xB984;, &#xBE44;&#xBC88; &#xC9C0;&#xC815;](../.gitbook/assets/image%20%2834%29.png)
 
-![&#xAD8C;&#xD55C;&#xC744; &#xC124;&#xC815;&#xD55C;&#xB2E4;](../.gitbook/assets/image%20%2848%29.png)
+![&#xAD8C;&#xD55C;&#xC744; &#xC124;&#xC815;&#xD55C;&#xB2E4;](../.gitbook/assets/image%20%2849%29.png)
 
 ## 고정ip로 열기.
 
-![home&#xC73C;&#xB85C;](../.gitbook/assets/image%20%2846%29.png)
+![home&#xC73C;&#xB85C;](../.gitbook/assets/image%20%2847%29.png)
 
 ![+ &#xD074;&#xB9AD;](../.gitbook/assets/image%20%281%29.png)
 

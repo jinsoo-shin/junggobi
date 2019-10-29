@@ -106,7 +106,7 @@ def search(request):
  },
 ```
 
-![&amp;lt;strong&amp;gt; &#xC544;&#xC774; &amp;lt;/string&amp;gt; ](../.gitbook/assets/image%20%2845%29.png)
+![&amp;lt;strong&amp;gt; &#xC544;&#xC774; &amp;lt;/string&amp;gt; ](../.gitbook/assets/image%20%2846%29.png)
 
 
 
@@ -210,7 +210,7 @@ def search(request):
 
 >
 
-![date\_avg&#xAC00; &#xB0B4;&#xB9BC;&#xCC28;&#xC21C;&#xC73C;&#xB85C; &#xC815;&#xB82C;&#xB418;&#xC5C8;&#xB2E4;.](../.gitbook/assets/image%20%2832%29.png)
+![date\_avg&#xAC00; &#xB0B4;&#xB9BC;&#xCC28;&#xC21C;&#xC73C;&#xB85C; &#xC815;&#xB82C;&#xB418;&#xC5C8;&#xB2E4;.](../.gitbook/assets/image%20%2833%29.png)
 
 ## 집계함수 key 기준 sort
 
@@ -233,9 +233,31 @@ def search(request):
          },
 ```
 
-![](../.gitbook/assets/image%20%2844%29.png)
+![](../.gitbook/assets/image%20%2845%29.png)
 
 {% embed url="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-terms-aggregation.html" %}
 
+## 멀티쿼
 
+{% embed url="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html" %}
+
+![](../.gitbook/assets/image%20%2828%29.png)
+
+```text
+ "query": {
+     # "multi_match": {
+     #     "query": search_word,
+     #     "fields": ["title", "contents", "region"]
+     # },
+     "bool": {
+         "should": [
+             {"match": {"title": search_word}},
+             {"match": {"contents": search_word}},
+             {"match": {"region": search_word}},
+             {"match": {"manufacturer": ""}},
+             {"match": {"model_name": "갤럭시"}}
+         ]
+     }
+ },
+```
 
