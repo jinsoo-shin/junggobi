@@ -10,17 +10,17 @@ def search(request):
         if search_word:
             es = Elasticsearch()
             docs = es.search(index='productinfo-index',
-                             body={
-                                 "size": 2,
-                                 #지정안할시에 size는 기본적으로 10개이지만 테스트를 위해 2로했다.
-                                 "from":0,
-                                 "query": {
-                                     "multi_match": {
-                                         "query": search_word, #검색
-                                         "fields": ["title", "contents", "region"]#어떤 필드에 적용할것인가?
-                                     }
-                                 },
-                             })
+             body={
+                 "size": 2,
+                 #지정안할시에 size는 기본적으로 10개이지만 테스트를 위해 2로했다.
+                 "from":0,
+                 "query": {
+                     "multi_match": {
+                         "query": search_word, #검색
+                         "fields": ["title", "contents", "region"]#어떤 필드에 적용할것인가?
+                     }
+                 },
+             })
 
             return Response(docs)
 ```
