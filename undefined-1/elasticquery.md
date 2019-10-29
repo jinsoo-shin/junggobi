@@ -106,7 +106,7 @@ def search(request):
  },
 ```
 
-![&amp;lt;strong&amp;gt; &#xC544;&#xC774; &amp;lt;/string&amp;gt; ](../.gitbook/assets/image%20%2843%29.png)
+![&amp;lt;strong&amp;gt; &#xC544;&#xC774; &amp;lt;/string&amp;gt; ](../.gitbook/assets/image%20%2845%29.png)
 
 
 
@@ -182,7 +182,59 @@ def search(request):
             return Response(docs)
 ```
 
+## 집계함수 bucket sort
 
+>
+
+{% code-tabs %}
+{% code-tabs-item title="내림차순으로 date\_avg를 정렬하겠다. size도 추후에 추가가능!" %}
+```text
+"aggs": {
+         "date_avg": {
+             "avg": {
+                 "field": "price"
+             },
+         },
+          "date_bucket_sort": {
+             "bucket_sort": {
+                 "sort": [
+                     {"date_avg": {"order": "desc"}},
+                 ],
+                 # "size": 7
+             }
+            }
+     }
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+>
+
+![date\_avg&#xAC00; &#xB0B4;&#xB9BC;&#xCC28;&#xC21C;&#xC73C;&#xB85C; &#xC815;&#xB82C;&#xB418;&#xC5C8;&#xB2E4;.](../.gitbook/assets/image%20%2832%29.png)
+
+## 집계함수 key 기준 sort
+
+> 방금 전에는 결과 값인 bucket를 기준으로 sort를 했다면 이번엔 기준인 key를 기준으로 정렬을 해보겠다.
+
+```text
+"group_by_date": {
+     "terms": {
+         "field": "date",
+         "format": "yyyy-MM-dd",
+         "order": {"_key": "asc"} # terms에 추가한다 key 기준으로 오름차
+          #"order" : { "_count" : "asc" }
+     },
+     "aggs": {
+         "date_avg": {
+             "avg": {
+                 "field": "price"
+             },
+         },
+```
+
+![](../.gitbook/assets/image%20%2844%29.png)
+
+{% embed url="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-terms-aggregation.html" %}
 
 
 
