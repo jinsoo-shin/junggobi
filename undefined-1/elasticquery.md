@@ -222,7 +222,8 @@ def search(request):
          "field": "date",
          "format": "yyyy-MM-dd",
          "order": {"_key": "asc"} # terms에 추가한다 key 기준으로 오름차
-          #"order" : { "_count" : "asc" }
+          #"order" : { "_count" : "asc" },
+          "size": 7 #일주일의 데이터를 보여주기위해 size 7
      },
      "aggs": {
          "date_avg": {
