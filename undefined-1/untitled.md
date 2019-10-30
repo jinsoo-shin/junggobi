@@ -28,3 +28,19 @@ tar -xzf elasticsearch-7.1.0-linux-x86_64.tar.gz
 cd elasticsearch-7.1.0/ 
 ```
 
+
+
+
+
+또 javapath 문제가 발생했다.
+
+위치를 확인해보자
+
+sudo update-alternatives --config java
+
+여기에 설치되어있다
+
+/usr/lib/jvm/java-11-openjdk-amd64/bin/java
+
+
+
