@@ -41,4 +41,5 @@
 * [노리 형태소 분석기를 써보자](undefined-1/nori.md)
 * [엘라스틱서치를 통해 검색을 사용해보자.](undefined-1/elasticquery.md)
 * [Untitled](undefined-1/untitled.md)
+* [우분투에서 설치하기.](undefined-1/ubuntu.md)
 
