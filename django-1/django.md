@@ -28,7 +28,7 @@ django-admin startproject backend
 
 
 
-![startproject backend &#xC2E4;&#xD589;](../.gitbook/assets/image%20%2829%29.png)
+![startproject backend &#xC2E4;&#xD589;](../.gitbook/assets/image%20%2832%29.png)
 
 > 생성한 프로젝트로 들어가기 cd backend
 
@@ -42,7 +42,7 @@ django-admin startapp api
 
 
 
-![&#xC0DD;&#xC131;&#xB41C; api\(myapp\)](../.gitbook/assets/image%20%2811%29.png)
+![&#xC0DD;&#xC131;&#xB41C; api\(myapp\)](../.gitbook/assets/image%20%2813%29.png)
 
 ## Settings 수정하기.
 
@@ -111,7 +111,7 @@ def index(request):
 
 > Get 방식과 Post 방식을 쓰겠다고 선언\(틀만 만들어놓음\)
 
-![&#xACB0;&#xACFC;&#xBB3C;](../.gitbook/assets/image%20%287%29.png)
+![&#xACB0;&#xACFC;&#xBB3C;](../.gitbook/assets/image%20%288%29.png)
 
 {% code-tabs %}
 {% code-tabs-item title="backend / api / urls.py" %}
@@ -142,9 +142,9 @@ pip install mysqlclient
 > database 연동하기.  
 > backend / backend / settings.py
 
-![&#xAE30;&#xC874;](../.gitbook/assets/image%20%289%29.png)
+![&#xAE30;&#xC874;](../.gitbook/assets/image%20%2810%29.png)
 
-![mysql&#xC758; junggobi&#xB77C;&#xB294; &#xD14C;&#xC774;&#xBE14;&#xACFC; &#xC5F0;&#xACB0;&#xD558;&#xACA0;&#xB2E4;](../.gitbook/assets/image%20%2831%29.png)
+![mysql&#xC758; junggobi&#xB77C;&#xB294; &#xD14C;&#xC774;&#xBE14;&#xACFC; &#xC5F0;&#xACB0;&#xD558;&#xACA0;&#xB2E4;](../.gitbook/assets/image%20%2834%29.png)
 
 ```text
 DATABASES = {
@@ -165,7 +165,7 @@ DATABASES = {
 python manage.py migrate
 ```
 
-![&#xC96C;&#xB974;&#xB974;&#xB974;&#xB974;&#xB975;](../.gitbook/assets/image%20%2841%29.png)
+![&#xC96C;&#xB974;&#xB974;&#xB974;&#xB974;&#xB975;](../.gitbook/assets/image%20%2844%29.png)
 
-![&#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; mysql&#xACFC; &#xC5F0;&#xB3D9;&#xB418;&#xC5C8;&#xB2E4;!](../.gitbook/assets/image%20%2823%29.png)
+![&#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; mysql&#xACFC; &#xC5F0;&#xB3D9;&#xB418;&#xC5C8;&#xB2E4;!](../.gitbook/assets/image%20%2826%29.png)
 

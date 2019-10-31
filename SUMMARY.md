@@ -30,6 +30,7 @@
 * [Untitled](parsing-and-crolling/untitled-2.md)
 * [성공코드.](parsing-and-crolling/untitled-3.md)
 * [Pandas](parsing-and-crolling/pandas.md)
+* [우분투에 크롬드라이버 설치하기](parsing-and-crolling/undefined-1.md)
 
 ## 한일
 
@@ -43,4 +44,5 @@
 * [Untitled](undefined-1/untitled.md)
 * [우분투에서 설치하기.](undefined-1/ubuntu.md)
 * [우분투 mysql외부접속.](undefined-1/mysql-..md)
+* [mysql 데이터 export/import하기.](undefined-1/mysql-export-import-..md)
 

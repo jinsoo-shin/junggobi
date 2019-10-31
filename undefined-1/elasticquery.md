@@ -91,7 +91,7 @@ def search(request):
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ## 검색어 결과를 강조해보자!
 
@@ -106,7 +106,7 @@ def search(request):
  },
 ```
 
-![&amp;lt;strong&amp;gt; &#xC544;&#xC774; &amp;lt;/string&amp;gt; ](../.gitbook/assets/image%20%2862%29.png)
+![&amp;lt;strong&amp;gt; &#xC544;&#xC774; &amp;lt;/string&amp;gt; ](../.gitbook/assets/image%20%2865%29.png)
 
 
 
@@ -210,7 +210,7 @@ def search(request):
 
 >
 
-![date\_avg&#xAC00; &#xB0B4;&#xB9BC;&#xCC28;&#xC21C;&#xC73C;&#xB85C; &#xC815;&#xB82C;&#xB418;&#xC5C8;&#xB2E4;.](../.gitbook/assets/image%20%2843%29.png)
+![date\_avg&#xAC00; &#xB0B4;&#xB9BC;&#xCC28;&#xC21C;&#xC73C;&#xB85C; &#xC815;&#xB82C;&#xB418;&#xC5C8;&#xB2E4;.](../.gitbook/assets/image%20%2846%29.png)
 
 ## 집계함수 key 기준 sort
 
@@ -233,7 +233,7 @@ def search(request):
          },
 ```
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2864%29.png)
 
 {% embed url="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-terms-aggregation.html" %}
 
@@ -241,7 +241,7 @@ def search(request):
 
 {% embed url="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html" %}
 
-![](../.gitbook/assets/image%20%2838%29.png)
+![](../.gitbook/assets/image%20%2841%29.png)
 
 ```text
  "query": {
