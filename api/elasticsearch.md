@@ -1,8 +1,10 @@
-# elasticsearch 검색 기능
+# API
 
-{% api-method method="get" host="http://localhost:8000/api/search" path="/?search\_word={string}" %}
+## elasticsearch 검색 기능
+
+{% api-method method="get" host="http://52.78.203.0:8000" path="/api/search/?search\_word={string}" %}
 {% api-method-summary %}
-Get Data
+검색하기.
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -91,13 +93,13 @@ Could not find a cake matching this query.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="http://localhost:8000/api/search" path="/?search={string}" %}
+{% api-method method="post" host="http://52.78.203.0:8000" path="/api/search/" %}
 {% api-method-summary %}
-Index  초기
+bulk\_indexing\(\) 호출하기.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-{string}에 아무거나 넣어도 작동합니다.
+장고에서 조작하지 않고, Mysql에서 데이터를 변경한 경우 bulk\_indexing\(\)이 호출되지않아 index에 변경사항이 반영되지 않습니다.  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -122,4 +124,43 @@ Index  초기
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## 자동 완성.
+
+{% api-method method="get" host="http://52.78.203.0:8000" path="/auto/?search\_word={String}" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+검색어 작성시마다 호출할 예정입니다.  
+아직 자음, 모음 분리를 하지 못 해 '개'를 입력할 경우 갤럭시~~ 를 찾지 못합니다.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="search\_word" type="string" required=false %}
+검색어 작성시마다 밑에 띄우기.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+![?search\_word=&#xAC24;](../.gitbook/assets/image%20%2863%29.png)
+
+![?search\_word=&#xC544;](../.gitbook/assets/image%20%286%29.png)
 

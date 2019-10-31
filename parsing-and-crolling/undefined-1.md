@@ -6,7 +6,7 @@
 sudo apt-get install chromium-chromedriver
 ```
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
 {% embed url="https://chromedriver.storage.googleapis.com/index.html?path=77.0.3865.40/" %}
 

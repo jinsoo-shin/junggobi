@@ -4,7 +4,7 @@
 
 ## api 설명서
 
-* [elasticsearch 검색 기능](api/elasticsearch.md)
+* [API](api/elasticsearch.md)
 * [DB INSERT 및 SELECT](api/db-insert-select.md)
 
 ## Mysql <a id="mysql-1"></a>
