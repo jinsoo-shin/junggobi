@@ -41,7 +41,7 @@
 * [엘라스틱서치 설치하기](undefined-1/setup_elasticsearch.md)
 * [노리 형태소 분석기를 써보자](undefined-1/nori.md)
 * [엘라스틱서치를 통해 검색을 사용해보자.](undefined-1/elasticquery.md)
-* [Untitled](undefined-1/untitled.md)
+* [AWS에 설치하기](undefined-1/untitled.md)
 * [우분투에서 설치하기.](undefined-1/ubuntu.md)
 * [우분투 mysql외부접속.](undefined-1/mysql-..md)
 * [mysql 데이터 export/import하기.](undefined-1/mysql-export-import-..md)
