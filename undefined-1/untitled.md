@@ -31,7 +31,7 @@ sudo apt-get install openjdk-8-jdk
 
 위치
 
-![](../.gitbook/assets/image%20%2849%29.png)
+![](../.gitbook/assets/image%20%2851%29.png)
 
 ![](../.gitbook/assets/image%20%2810%29.png)
 
@@ -86,7 +86,7 @@ sudo reboot now
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-![](../.gitbook/assets/image%20%2853%29.png)
+![](../.gitbook/assets/image%20%2855%29.png)
 
 ## 실행.
 
@@ -123,9 +123,9 @@ sudo -i service elasticsearch stop
 sudo bin/elasticsearch-plugin install analysis-nori
 ```
 
-![&#xC124;&#xCE58;&#xC644;&#xB8CC;&#xD588;&#xB2E4;&#x3160;&#x3160;](../.gitbook/assets/image%20%2846%29.png)
+![&#xC124;&#xCE58;&#xC644;&#xB8CC;&#xD588;&#xB2E4;&#x3160;&#x3160;](../.gitbook/assets/image%20%2848%29.png)
 
-![&#xC124;&#xCE58; &#xD655;&#xC778;!!!!](../.gitbook/assets/image%20%2848%29.png)
+![&#xC124;&#xCE58; &#xD655;&#xC778;!!!!](../.gitbook/assets/image%20%2850%29.png)
 
 ## 외부접속 열어주자!
 
@@ -133,9 +133,9 @@ sudo bin/elasticsearch-plugin install analysis-nori
 
 파일은  /etc/elasticsearch에 위치하고있다.
 
-![](../.gitbook/assets/image%20%2855%29.png)
+![](../.gitbook/assets/image%20%2857%29.png)
 
-![network.host&#xB97C; &#xACE0;&#xCE58;&#xACA0;&#xB2E4;](../.gitbook/assets/image%20%2826%29.png)
+![network.host&#xB97C; &#xACE0;&#xCE58;&#xACA0;&#xB2E4;](../.gitbook/assets/image%20%2827%29.png)
 
 ![&#xC218;&#xC815;](../.gitbook/assets/image%20%2821%29.png)
 
@@ -150,13 +150,17 @@ sudo service elasticsearch restart
  \) **curl: \(7\) Failed to connect to HOST\_NAME port 9200: 연결이 거부됨** 발생 시,  
 - `sudo ufw allow 9200` 명령어로 9200번 포트를 열어준다.
 
+## ssh 접속이 끊겨도 돌아가게 해주자!
 
+![](../.gitbook/assets/image%20%2825%29.png)
 
+> sudo nohup \[ 명령어 \] &
 
+```text
+sudo nohup service elasticsearch start &
+```
 
-
-
-
+![&#xCA14;&#xC794;](../.gitbook/assets/image%20%2830%29.png)
 
 
 

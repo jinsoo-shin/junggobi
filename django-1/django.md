@@ -28,7 +28,7 @@ django-admin startproject backend
 
 
 
-![startproject backend &#xC2E4;&#xD589;](../.gitbook/assets/image%20%2828%29.png)
+![startproject backend &#xC2E4;&#xD589;](../.gitbook/assets/image%20%2829%29.png)
 
 > 생성한 프로젝트로 들어가기 cd backend
 
@@ -144,7 +144,7 @@ pip install mysqlclient
 
 ![&#xAE30;&#xC874;](../.gitbook/assets/image%20%289%29.png)
 
-![mysql&#xC758; junggobi&#xB77C;&#xB294; &#xD14C;&#xC774;&#xBE14;&#xACFC; &#xC5F0;&#xACB0;&#xD558;&#xACA0;&#xB2E4;](../.gitbook/assets/image%20%2829%29.png)
+![mysql&#xC758; junggobi&#xB77C;&#xB294; &#xD14C;&#xC774;&#xBE14;&#xACFC; &#xC5F0;&#xACB0;&#xD558;&#xACA0;&#xB2E4;](../.gitbook/assets/image%20%2831%29.png)
 
 ```text
 DATABASES = {
@@ -165,7 +165,7 @@ DATABASES = {
 python manage.py migrate
 ```
 
-![&#xC96C;&#xB974;&#xB974;&#xB974;&#xB974;&#xB975;](../.gitbook/assets/image%20%2839%29.png)
+![&#xC96C;&#xB974;&#xB974;&#xB974;&#xB974;&#xB975;](../.gitbook/assets/image%20%2841%29.png)
 
 ![&#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; mysql&#xACFC; &#xC5F0;&#xB3D9;&#xB418;&#xC5C8;&#xB2E4;!](../.gitbook/assets/image%20%2823%29.png)
 
