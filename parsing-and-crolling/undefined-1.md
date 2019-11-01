@@ -10,9 +10,17 @@ sudo apt-get install chromium-chromedriver
 
 {% embed url="https://chromedriver.storage.googleapis.com/index.html?path=77.0.3865.40/" %}
 
+```text
+wget https://chromedriver.storage.googleapis.com/77.0.3865.40/chromedriver_linux64.zip
+```
 
+```text
+sudo apt-get install unzip
+```
 
-
+```text
+unzip chromedriver_linux64.zip
+```
 
 
 
