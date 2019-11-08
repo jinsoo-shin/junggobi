@@ -10,21 +10,21 @@ django는 기본적으로 sqlite를 지원하지만 mysql, mariadb등 외부 db�
 
 {% embed url="https://docs.djangoproject.com/ko/2.2/intro/tutorial01/" %}
 
-{% code-tabs %}
-{% code-tabs-item title="Django 설치하기" %}
+{% tabs %}
+{% tab title="Django 설치하기" %}
 ```text
 python -m pip install Django
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="프로젝트 시작하기 \(settings,  manage.py\)" %}
+{% tabs %}
+{% tab title="프로젝트 시작하기 \(settings,  manage.py\)" %}
 ```text
 django-admin startproject backend
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 
 
@@ -32,13 +32,13 @@ django-admin startproject backend
 
 > 생성한 프로젝트로 들어가기 cd backend
 
-{% code-tabs %}
-{% code-tabs-item title="app 생성 \( model, admin\)" %}
+{% tabs %}
+{% tab title="app 생성 \( model, admin\)" %}
 ```text
 django-admin startapp api
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 
 
@@ -49,8 +49,8 @@ django-admin startapp api
 > Settings.py 설정 추가하기  
 > backend / backend / settings.py
 
-{% code-tabs %}
-{% code-tabs-item title="rest\_framework와 api를 추가한다." %}
+{% tabs %}
+{% tab title="rest\_framework와 api를 추가한다." %}
 ```text
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -65,8 +65,8 @@ INSTALLED_APPS = [
     'myapp',
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ```text
 ALLOWED_HOSTS = ["localhost","127.0.0.1"]
@@ -74,8 +74,8 @@ ALLOWED_HOSTS = ["localhost","127.0.0.1"]
 
 ## URL 추가하기.
 
-{% code-tabs %}
-{% code-tabs-item title="api의 urls를 가져다 쓰겠다고 선언하기" %}
+{% tabs %}
+{% tab title="api의 urls를 가져다 쓰겠다고 선언하기" %}
 ```text
 from django.contrib import admin
 from django.urls import path,include
@@ -86,11 +86,11 @@ urlpatterns = [
 ]
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="api에 api를 수행할 소스들을 담을 폴더 \(views\)를 생성하기 test.py" %}
+{% tabs %}
+{% tab title="api에 api를 수행할 소스들을 담을 폴더 \(views\)를 생성하기 test.py" %}
 ```text
 from rest_framework import status
 from rest_framework.decorators import api_view
@@ -106,15 +106,15 @@ def index(request):
         return Response(data=request_data, status=status.HTTP_200_OK)
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 > Get 방식과 Post 방식을 쓰겠다고 선언\(틀만 만들어놓음\)
 
 ![&#xACB0;&#xACFC;&#xBB3C;](../.gitbook/assets/image%20%289%29.png)
 
-{% code-tabs %}
-{% code-tabs-item title="backend / api / urls.py" %}
+{% tabs %}
+{% tab title="backend / api / urls.py" %}
 ```text
 from django.conf.urls import url
 from .api_views import test
@@ -123,21 +123,21 @@ urlpatterns = [
 ]
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 > api\_views 폴더의 test.py를 import  
 > localhost:8080/index/라고 호출하면 test.py의 index함수를 호출하겠다고 선언.
 
 ## mysql 연동하기. 
 
-{% code-tabs %}
-{% code-tabs-item title="mysql 연동 클라이언트 설치하기" %}
+{% tabs %}
+{% tab title="mysql 연동 클라이언트 설치하기" %}
 ```text
 pip install mysqlclient
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 > database 연동하기.  
 > backend / backend / settings.py

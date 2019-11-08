@@ -1,7 +1,7 @@
 # 셀레니움 네이버 로그인
 
-{% code-tabs %}
-{% code-tabs-item title="네이버 로그인" %}
+{% tabs %}
+{% tab title="네이버 로그인" %}
 ```text
 from selenium import webdriver
 from bs4 import BeautifulSoup
@@ -17,6 +17,6 @@ driver.execute_script("document.getElementsByName('id')[0].value=\'" + id + "\'"
 driver.execute_script("document.getElementsByName('pw')[0].value=\'" + pw + "\'")
 driver.find_element_by_xpath('//*[@id="frmNIDLogin"]/fieldset/input').click()
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 

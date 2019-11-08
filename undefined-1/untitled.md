@@ -39,67 +39,67 @@ sudo apt-get install openjdk-8-jdk
 
 /usr/lib/jvm/java-8-openjdk-amd64/
 
-{% code-tabs %}
-{% code-tabs-item title="프로필 열기" %}
+{% tabs %}
+{% tab title="프로필 열기" %}
 ```text
 sudo nano /etc/profile
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="밑에 추가하기" %}
+{% tabs %}
+{% tab title="밑에 추가하기" %}
 ```text
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$JAVA_HOME/bin/:$PATH
 export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 > 저장하기 ctrl+x  -&gt;  y  -&gt; enter
 
-{% code-tabs %}
-{% code-tabs-item title="프로필 리로드!" %}
+{% tabs %}
+{% tab title="프로필 리로드!" %}
 ```text
 source /etc/profile 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="서버 재시작 안해도 인식하기는 함" %}
+{% tabs %}
+{% tab title="서버 재시작 안해도 인식하기는 함" %}
 ```text
 sudo reboot now
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="위치확인" %}
+{% tabs %}
+{% tab title="위치확인" %}
 ```text
  echo $JAVA_HOME
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ![](../.gitbook/assets/image%20%2859%29.png)
 
 ## 실행.
 
-{% code-tabs %}
-{% code-tabs-item title="명령어들" %}
+{% tabs %}
+{% tab title="명령어들" %}
 ```text
 sudo service elasticsearch restart
 sudo service elasticsearch start
 sudo -i service elasticsearch start
 sudo -i service elasticsearch stop
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 > 백그라운드에서 실행이 되는지 안보여서 curl로 실행해보았다.
 
