@@ -25,8 +25,7 @@ def search(request):
             return Response(docs)
 ```
 
-{% tabs %}
-{% tab title="결과물" %}
+{% code title="결과물" %}
 ```text
 "hits": {
         "total": {
@@ -55,13 +54,11 @@ def search(request):
                     "contents: "내용내"
                 },
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ## 집계 함수를 사용해보자.
 
-{% tabs %}
-{% tab title="날짜별로 최저,최고,평균 가격을 뽑아보겠다." %}
+{% code title="날짜별로 최저,최고,평균 가격을 뽑아보겠다." %}
 ```python
 "aggs": {#aggregations                                     
     "group_by_date": {
@@ -88,8 +85,7 @@ def search(request):
          }
         },
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ![](../.gitbook/assets/image%20%2837%29.png)
 
@@ -186,8 +182,7 @@ def search(request):
 
 >
 
-{% tabs %}
-{% tab title="내림차순으로 date\_avg를 정렬하겠다. size도 추후에 추가가능!" %}
+{% code title="내림차순으로 date\_avg를 정렬하겠다. size도 추후에 추가가능!" %}
 ```text
 "aggs": {
          "date_avg": {
@@ -205,8 +200,7 @@ def search(request):
             }
      }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 >
 

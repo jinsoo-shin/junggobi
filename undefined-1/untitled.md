@@ -39,67 +39,55 @@ sudo apt-get install openjdk-8-jdk
 
 /usr/lib/jvm/java-8-openjdk-amd64/
 
-{% tabs %}
-{% tab title="프로필 열기" %}
+{% code title="프로필 열기" %}
 ```text
 sudo nano /etc/profile
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="밑에 추가하기" %}
+{% code title="밑에 추가하기" %}
 ```text
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$JAVA_HOME/bin/:$PATH
 export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 > 저장하기 ctrl+x  -&gt;  y  -&gt; enter
 
-{% tabs %}
-{% tab title="프로필 리로드!" %}
+{% code title="프로필 리로드!" %}
 ```text
 source /etc/profile 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="서버 재시작 안해도 인식하기는 함" %}
+{% code title="서버 재시작 안해도 인식하기는 함" %}
 ```text
 sudo reboot now
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="위치확인" %}
+{% code title="위치확인" %}
 ```text
  echo $JAVA_HOME
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ![](../.gitbook/assets/image%20%2859%29.png)
 
 ## 실행.
 
-{% tabs %}
-{% tab title="명령어들" %}
+{% code title="명령어들" %}
 ```text
 sudo service elasticsearch restart
 sudo service elasticsearch start
 sudo -i service elasticsearch start
 sudo -i service elasticsearch stop
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 > 백그라운드에서 실행이 되는지 안보여서 curl로 실행해보았다.
 

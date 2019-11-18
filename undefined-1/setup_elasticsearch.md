@@ -91,16 +91,13 @@ SET "JAVA_HOME=C:\Program Files\Java\jdk1.8.0_191"
 
 ![&#xBC11;&#xC758; &#xBC84;&#xC804;&#xC740; &#xC2E4;&#xD328;&#xD588;&#xB2E4; 7.X&#xB97C; &#xC124;&#xCE58;&#xD558;&#xC2DC;&#xC624;.](../.gitbook/assets/image%20%2860%29.png)
 
-{% tabs %}
-{% tab title="설치" %}
+{% code title="설치" %}
 ```text
 pip install elasticsearch-dsl
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="settings.py에 추가한다." %}
+{% code title="settings.py에 추가한다." %}
 ```text
 ELASTICSEARCH_DSL = {
     'default': {
@@ -108,23 +105,19 @@ ELASTICSEARCH_DSL = {
     },
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 > app폴더위치에 search.py 파일을 추가한다.
 
-{% tabs %}
-{% tab title="엘라스틱 설정에 대한 글로벌 연결 완료 " %}
+{% code title="엘라스틱 설정에 대한 글로벌 연결 완료 " %}
 ```text
 from elasticsearch_dsl.connections import connections
 
 connections.create_connection()
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="인덱스를 생성할 대상을 정한다 " %}
+{% code title="인덱스를 생성할 대상을 정한다 " %}
 ```text
 from elasticsearch_dsl.connections import connections
 from elasticsearch_dsl import DocType, Text, Date, Integer
@@ -152,11 +145,9 @@ class Meta:
     index = 'navercafe-index'
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-{% tabs %}
-{% tab title="search.py에 추가한다." %}
+{% code title="search.py에 추가한다." %}
 ```text
 from elasticsearch.helpers import bulk
 from elasticsearch import Elasticsearch
@@ -166,8 +157,7 @@ def bulk_indexing():
     es = Elasticsearch()
     bulk(client=es, actions=(b.indexing() for b in Navercafe.objects.all().iterator()))
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 > 모델에서 무언가를 변경할 때마다 대량 인덱싱 `init()`만하고 싶기 때문에 모델을 ElasticSearch에 매핑하는 모델입니다. 그런 다음를 사용하여 ElasticSearch에 대한 연결을 생성 `bulk`할 인스턴스를 전달합니다 `Elasticsearch()`. 그런 다음 생성기를 전달 하여 일반 데이터베이스에있는 `actions=`모든 `BlogPost`오브젝트를 반복하고 `.indexing()`각 오브젝트 에서 메소드를 호출하십시오 . 왜 발전기인가? 생성기를 반복 할 객체가 많으면 먼저 메모리에로드 할 필요가 없기 때문입니다.
 >
@@ -175,8 +165,7 @@ def bulk_indexing():
 >
 > 라고함.....[https://www.freecodecamp.org/news/elasticsearch-with-django-the-easy-way-909375bc16cb/](https://www.freecodecamp.org/news/elasticsearch-with-django-the-easy-way-909375bc16cb/) 여기에서 ㅇㅇㅇ.
 
-{% tabs %}
-{% tab title="최종 search.py" %}
+{% code title="최종 search.py" %}
 ```text
 from elasticsearch_dsl.connections import connections
 from elasticsearch_dsl import Document, Keyword, Text, Integer, Date,Search
@@ -217,8 +206,7 @@ def search(display):
     response = s.execute()
     return response
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 > elastic 7.x 버전부터 class Meta: index가 class Index: name으로 변경되었다.
 
@@ -254,15 +242,13 @@ def indexing(self):
 
 
 
-{% tabs %}
-{% tab title="인덱싱!!!!!!" %}
+{% code title="인덱싱!!!!!!" %}
 ```text
 python manage.py shell
 from api.search import *
 bulk_indexing()
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 
 
