@@ -31,7 +31,7 @@ sudo apt-get install openjdk-8-jdk
 
 위치
 
-![](../.gitbook/assets/image%20%2855%29.png)
+![](../.gitbook/assets/image%20%2856%29.png)
 
 ![](../.gitbook/assets/image%20%2812%29.png)
 
@@ -76,7 +76,7 @@ sudo reboot now
 ```
 {% endcode %}
 
-![](../.gitbook/assets/image%20%2859%29.png)
+![](../.gitbook/assets/image%20%2861%29.png)
 
 ## 실행.
 
@@ -111,9 +111,9 @@ sudo -i service elasticsearch stop
 sudo bin/elasticsearch-plugin install analysis-nori
 ```
 
-![&#xC124;&#xCE58;&#xC644;&#xB8CC;&#xD588;&#xB2E4;&#x3160;&#x3160;](../.gitbook/assets/image%20%2852%29.png)
+![&#xC124;&#xCE58;&#xC644;&#xB8CC;&#xD588;&#xB2E4;&#x3160;&#x3160;](../.gitbook/assets/image%20%2853%29.png)
 
-![&#xC124;&#xCE58; &#xD655;&#xC778;!!!!](../.gitbook/assets/image%20%2854%29.png)
+![&#xC124;&#xCE58; &#xD655;&#xC778;!!!!](../.gitbook/assets/image%20%2855%29.png)
 
 ## 외부접속 열어주자!
 
@@ -121,9 +121,9 @@ sudo bin/elasticsearch-plugin install analysis-nori
 
 파일은  /etc/elasticsearch에 위치하고있다.
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2863%29.png)
 
-![network.host&#xB97C; &#xACE0;&#xCE58;&#xACA0;&#xB2E4;](../.gitbook/assets/image%20%2831%29.png)
+![network.host&#xB97C; &#xACE0;&#xCE58;&#xACA0;&#xB2E4;](../.gitbook/assets/image%20%2832%29.png)
 
 ![&#xC218;&#xC815;](../.gitbook/assets/image%20%2825%29.png)
 
@@ -140,7 +140,7 @@ sudo service elasticsearch restart
 
 ## ssh 접속이 끊겨도 돌아가게 해주자!
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2830%29.png)
 
 > sudo nohup \[ 명령어 \] &
 
@@ -148,7 +148,7 @@ sudo service elasticsearch restart
 sudo nohup service elasticsearch start &
 ```
 
-![&#xCA14;&#xC794;](../.gitbook/assets/image%20%2834%29.png)
+![&#xCA14;&#xC794;](../.gitbook/assets/image%20%2835%29.png)
 
 
 

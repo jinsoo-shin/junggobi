@@ -160,7 +160,7 @@ bulk\_indexing\(\) 호출하기.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-![?search\_word=&#xAC24;](../.gitbook/assets/image%20%2863%29.png)
+![?search\_word=&#xAC24;](../.gitbook/assets/image%20%2865%29.png)
 
 ![?search\_word=&#xC544;](../.gitbook/assets/image%20%286%29.png)
 

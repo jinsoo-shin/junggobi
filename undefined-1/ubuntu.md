@@ -12,7 +12,7 @@
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.1.0-amd64.deb
 ```
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 ```text
 sudo dpkg -i elasticsearch-7.4.1-amd64.deb
