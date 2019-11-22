@@ -13,7 +13,7 @@ def search(request):
              body={
                  "size": 2,
                  #지정안할시에 size는 기본적으로 10개이지만 테스트를 위해 2로했다.
-                 "from":0,
+                 "from":0, #페이징 관
                  "query": {
                      "multi_match": {
                          "query": search_word, #검색

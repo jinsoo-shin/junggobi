@@ -79,12 +79,6 @@ SET "JAVA_HOME=C:\Program Files\Java\jdk1.8.0_191"
 
 ## 3. 장고와 연동하기.
 
-> Haystack은 Django에 대한 모듈 식 검색을 제공 하는 **훌륭한 오픈 소스 도구** 입니다. 불행히도 최신 버전의 Elasticsearch를 완벽하게 지원하지는 않습니다. 이를 극복하기 위해 Elasticsearch 원래 개발 팀이 만든 **elasticsearch-dsl** 을 사용 하여 새로운 릴리스를보다 잘 지원합니다.  
->   
-> 출처 : [https://www.merixstudio.com/blog/elasticsearch-django-rest-framework/](https://www.merixstudio.com/blog/elasticsearch-django-rest-framework/)
-
->
-
 
 
 ![&#xC124;&#xCE58;&#xB41C; &#xBC84;&#xC804;](../.gitbook/assets/image%20%2821%29.png)
