@@ -1,6 +1,6 @@
 # Untitled
 
-[이중봉](https://app.slack.com/team/UNZ5LHGFL) [4:59 PM](https://s1p3-gwangju.slack.com/archives/CNZ732V2N/p1573027169001600)1. 프로그래밍 언어 / DB  
+1. 프로그래밍 언어 / DB  
 1.    Front-End  
     Vue.js, Vuetify, HTML, JS, CSS3  
 2.    Back-End  

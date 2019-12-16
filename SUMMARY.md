@@ -2,11 +2,6 @@
 
 * [Initial page](README.md)
 
-## api 설명서
-
-* [API](api/elasticsearch.md)
-* [DB INSERT 및 SELECT](api/db-insert-select.md)
-
 ## Mysql <a id="mysql-1"></a>
 
 * [mysql 설치 & 설정](mysql-1/untitled-1.md)
@@ -26,7 +21,6 @@
 
 * [셀레니움 시작하기.](parsing-and-crolling/undefined.md)
 * [셀레니움 네이버 로그인](parsing-and-crolling/untitled.md)
-* [Untitled](parsing-and-crolling/untitled-1.md)
 * [Untitled](parsing-and-crolling/untitled-2.md)
 * [성공코드.](parsing-and-crolling/untitled-3.md)
 * [Pandas](parsing-and-crolling/pandas.md)
